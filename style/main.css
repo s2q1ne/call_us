@@ -1,0 +1,98 @@
+@font-face {
+    font-family: athin;
+    src: url(../font/THIN.ttf);
+}
+@font-face{
+    font-family: asemibold;
+    src: url(../font/SEMIBOLD.ttf);
+}
+.bold{
+    font-family: asemibold;
+}
+
+html{
+    font-family: athin;
+    color: white;
+}
+header{
+    width: 100%;
+}
+
+#top-nav{
+    width: 96%;
+    padding-top: 2vh;
+    padding-left: 2vw;
+    padding-right: 2%;
+    padding-bottom: 2vh;
+    background-color: #898989;
+}
+body{
+    margin: 0;
+}
+footer{
+    background-color: #898989;
+    position: relative;
+    bottom: 0;
+}
+.center{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#top-right{
+    float: right;
+    line-height: 34px;
+    font-size: 17px;
+}
+.banner{
+    padding: 20vh;
+    background-image: url("../res/banner.png");
+    background-size: cover;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.box{
+    float: left;
+    width: 30vw;
+    height: 30vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    background-color: #898989;
+    background-size: cover;
+    border-radius: 6px;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer{
+    padding: 10vh;
+    text-decoration: none;
+}
+a{
+    color: white;
+    text-decoration-line: none;
+}
+
+.logo{
+    width: 120px;
+}
+.btn1{
+    background-image: url("../res/연락처관리.png");
+    background-position: right;
+}
+.manage{
+    background-image: url("../res/연락처관리하기.gif");
+}
+.btn2{
+    background-image: url("../res/연락처불러.png");
+    background-position: left;
+}
+.loading{
+    background-image: url("../res/연락처불러오기.gif");
+}
