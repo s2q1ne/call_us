@@ -153,9 +153,12 @@ input:focus{
     margin-left: 100px;
     padding-bottom: 30px;
 }
+.lately:hover{
+    cursor: pointer;
+}
 .table{
     top: 70px;
-    left: 60px;
+    left: -30px;
     position: relative;
     min-height: 30px;
     height: 30px;
@@ -169,6 +172,7 @@ input:focus{
     border-radius: 20px;
     overflow-x: hidden;
     width: 284px;
+    margin: 0 auto;
 }
 .code{
     overflow-x: hidden;
@@ -199,4 +203,7 @@ input:focus{
 .rt{
     position: relative;
     left: 3px;
+}
+.dis{
+    display: none;
 }

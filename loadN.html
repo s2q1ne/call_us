@@ -37,34 +37,53 @@
                 
                 <!-- 메인탭 -->
                 <br>
-                <div class="horizon">
-                    <div style="display: table">
-                        <div class="tcenter">
-                            <div class="container">
-                                <div class="capsule"></div>
-                                <div class="rtbox">
-                                    <span class="bold lately"> 최근에 등록한 코드 </span>
-                                    <div class="loadtext"> 
-                                        연락처를 불러오려면<br> 
-                                        <span class="big"><span class="bold">할당된</span> 코드를<br>
-                                        입력하세요.</span>
-                                    </div>
-                                    <div class="formbox">
-                                        <input type="text" placeholder="코드를 입력하세요.">
-                                        <button>SUBMIT</button>
+                <div style="margin: 0 auto;">
+                    <div class="horizon">
+                        <div style="display: table; margin: 0 auto;">
+                            <div class="tcenter">
+                                <div class="container">
+                                    <div class="capsule"></div>
+                                    <div class="rtbox">
+                                        <div class="bold lately" 
+                                        onclick="code()">
+                                         최근에 등록한 코드 </div>
+                                         <script> 
+                                            
+                                            let a = false;
+                                            function code(){
+                                                let table =document.getElementById('table');
+                                                // if( table.classList )
+                                                console.log(table.classList.hasOwnProperty(1));
+                                                if( table.classList.hasOwnProperty(1) ){
+                                                    table.classList.remove('dis');   
+                                                }
+                                                else
+                                                    table.classList.add('dis');
+                                            }
+                                            
+                                         </script>
+                                        <div class="loadtext"> 
+                                            연락처를 불러오려면<br> 
+                                            <span class="big"><span class="bold">할당된</span> 코드를<br>
+                                            입력하세요.</span>
+                                        </div>
+                                        <div class="formbox">
+                                            <input type="text" placeholder="코드를 입력하세요.">
+                                            <button>SUBMIT</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- 최근에 등록한 코드  -->
-                    <div class="table">
-                        <ol class="horizon nomore">
-                            <li class="day">00.07.30.13</li>
-                            <li class="Cname">학생회까요</li>
-                            <li class="code">#fafasdad132dasd111112</li>
-                            <span onclick="console.log('CLICKED')" class="bold rt">&gt;</span>
-                        </ol>
+                        <!-- 최근에 등록한 코드  -->
+                        <div class="table dis" id="table">
+                            <ol class="horizon nomore">
+                                <li class="day">00.07.30.13</li>
+                                <li class="Cname">학생회까요</li>
+                                <li class="code">#fafasdad132dasd111112</li>
+                                <span onclick="console.log('CLICKED')" class="bold rt">&gt;</span>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
