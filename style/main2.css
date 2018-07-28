@@ -1,3 +1,19 @@
+@font-face {
+    font-family: athin;
+    src: url(../font/THIN.ttf);
+}
+@font-face{
+    font-family: asemibold;
+    src: url(../font/SEMIBOLD.ttf);
+}
+.bold{
+    font-family: asemibold;
+}
+
+html{
+    font-family: athin;
+}
+
 .innerBox{
     background-image: url("../res/bg-img.jpg");
     background-size: cover;

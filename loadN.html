@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+            <title> CALL_US </title>
+            <link rel="stylesheet" href="./style/loadns.css">
+            <link rel="shortcut icon" href="./res/icon.png" type="image/x-icon" />
+            <link rel="icon" href="./res/icon.png" type="image/x-icon" />
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <span>
+                    <div class="outlogo">
+                        <a href="index.html">
+                            <img class="logo" src="./res/logo.png">
+                        </a>
+                    </div>
+                </span>
+                <span class="profile">
+                    <a href="login.html">
+                        <span class="name">{{박태훈}}</span>
+                        <img src="./res/default-profile.png" class="simg">
+                    </a>
+                </span>
+            </div>
+        </header>
+        <main>
+            <div class="mainContainer">
+                
+                <!-- 연락처 불러오기 -->
+                <div class="horizon">
+                    <span class="stitle">연락처 불러오기&nbsp;</span>
+                    <img src="./res/sending.png" class="simg">
+                    <div class="line"></div>
+                </div>
+                
+                <!-- 메인탭 -->
+                <br>
+                <div class="horizon">
+                    <div style="display: table">
+                        <div class="tcenter">
+                            <div class="container">
+                                <div class="capsule"></div>
+                                <div class="rtbox">
+                                    <span class="bold lately"> 최근에 등록한 코드 </span>
+                                    <div class="loadtext"> 
+                                        연락처를 불러오려면<br> 
+                                        <span class="big"><span class="bold">할당된</span> 코드를<br>
+                                        입력하세요.</span>
+                                    </div>
+                                    <div class="formbox">
+                                        <input type="text" placeholder="코드를 입력하세요.">
+                                        <button>SUBMIT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 최근에 등록한 코드  -->
+                    <div class="table">
+                        <ol class="horizon nomore">
+                            <li class="day">00.07.30.13</li>
+                            <li class="Cname">학생회까요</li>
+                            <li class="code">#fafasdad132dasd111112</li>
+                            <span onclick="console.log('CLICKED')" class="bold rt">&gt;</span>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

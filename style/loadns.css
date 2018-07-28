@@ -1,0 +1,202 @@
+@font-face {
+    font-family: athin;
+    src: url(../font/THIN.ttf);
+}
+@font-face{
+    font-family: asemibold;
+    src: url(../font/SEMIBOLD.ttf);
+}
+.bold{
+    color: #008cb7;
+}
+
+html{
+    font-family: athin;
+}
+.logo{
+    width: 115px;
+}
+.outlogo{
+    display: inline-block;
+}
+.header{
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    width: 1060px;
+    max-width: 90vw;
+    margin: 0 auto;
+    display: block;
+    top: 0;
+}
+.profile{
+    float: right;
+    font-size: 14px;
+}
+.name{
+    position: relative; 
+    top: -7px;
+}
+.simg{
+    width: 27.48px;
+}
+
+header{
+    min-width: 100%;
+    background-color: #666666;
+}
+body{
+    margin: 0;
+}
+span>a{
+    text-decoration-line: none;
+    color: white;
+}
+.mainContainer{
+    margin: 65px auto;
+    width: 960px;
+    max-width: 90vw;
+}
+.stitle{
+    font-size: 30px;
+}
+.line{
+    width: 60vw;
+    max-width: 620px;
+    background-color: #666666;
+    height: 0.6px;
+    border-radius: 100%;
+    position: relative;
+    margin-left: 14px;
+    top: 14px;
+}
+.horizon{
+    display: flex;
+    flex-direction: row;
+}
+.simg{
+    width: 30px;
+    height: 30px;
+}
+.container{
+    /* padding: 70px; */
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin: 0 auto;
+}
+.cent{
+    margin: 0 auto;
+}
+.capsule{
+    width: 200px;
+    height: 250px;
+    margin: 0px auto;
+    background-image: url(../res/capsule.png);
+    background-size: cover;
+    background-position: center;
+}
+.loadtext{
+    width: 200px;
+    text-align: left;
+    white-space: nowrap;
+}
+.tcenter{
+    width: 500px;
+    min-height: calc(100vw- 200px);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.big{
+    font-size: 34px;
+}
+.formbox{
+    display: flex;
+    flex-direction: column;
+}
+div>button{
+    width: 60px;
+    height: 26px;
+    border-radius: 13px;
+    border: 0.7px solid #008cb7;
+    color: #008cb7;
+    letter-spacing: -0.3px;    
+    font-size: 10px;
+    background-color: #fff0;
+    margin-left: 170px;
+}
+button:focus{
+    outline:none;
+}
+input{
+    background-color: #00000000;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #666;
+    margin-bottom: 10px;
+}
+input:focus{
+    outline: none;
+}
+.formbox{
+    margin-top: 110px;
+}
+.lately{
+    display: inline-block;
+    text-align: right;
+    margin-left: 100px;
+    padding-bottom: 30px;
+}
+.table{
+    top: 70px;
+    left: 60px;
+    position: relative;
+    min-height: 30px;
+    height: 30px;
+    max-height: 260px;
+    background-color: #ccc;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    padding-right: 3px;
+    overflow-y: auto;
+    border-radius: 20px;
+    overflow-x: hidden;
+    width: 284px;
+}
+.code{
+    overflow-x: hidden;
+    max-width: 110px;
+}
+.day{
+    max-width: 85px;
+    overflow: hidden;
+}
+ .Cname{
+    max-width: 80px;
+    overflow: hidden;
+}
+.horizon{
+    display: flex;
+    flex-direction: row;
+}
+.code, .day, .Cname{
+    min-width: 80px;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.nomore{
+    padding: 0;
+    margin: 0;
+}
+.rt{
+    position: relative;
+    left: 3px;
+}
