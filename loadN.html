@@ -41,27 +41,12 @@
                     <div class="horizon">
                         <div style="display: table; margin: 0 auto;">
                             <div class="tcenter">
-                                <div class="container">
+                                <div class="container whitebg">
                                     <div class="capsule"></div>
                                     <div class="rtbox">
                                         <div class="bold lately" 
                                         onclick="code()">
                                          최근에 등록한 코드 </div>
-                                         <script> 
-                                            
-                                            let a = false;
-                                            function code(){
-                                                let table =document.getElementById('table');
-                                                // if( table.classList )
-                                                console.log(table.classList.hasOwnProperty(1));
-                                                if( table.classList.hasOwnProperty(1) ){
-                                                    table.classList.remove('dis');   
-                                                }
-                                                else
-                                                    table.classList.add('dis');
-                                            }
-                                            
-                                         </script>
                                         <div class="loadtext"> 
                                             연락처를 불러오려면<br> 
                                             <span class="big"><span class="bold">할당된</span> 코드를<br>
@@ -88,5 +73,8 @@
                 </div>
             </div>
         </main>
+        <footer>
+            <script src="./js/slide.js"></script>
+        </footer>
     </body>
 </html>

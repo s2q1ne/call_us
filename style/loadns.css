@@ -173,6 +173,7 @@ input:focus{
     overflow-x: hidden;
     width: 284px;
     margin: 0 auto;
+    z-index: -10;
 }
 .code{
     overflow-x: hidden;
@@ -205,5 +206,8 @@ input:focus{
     left: 3px;
 }
 .dis{
-    display: none;
+    opacity: 0;
+}
+.whitebg{
+    background-color: white;
 }
