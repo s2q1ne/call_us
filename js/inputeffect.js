@@ -1,8 +1,11 @@
 var objectsOfEffects = new Array();
-const MaxSize = 15, MinSize = 10;
+const MaxSize = 18, MinSize = 10;
 const MaxOpacity = 100, MinOpacity = 0;
-const sizeSpeed = 0.25;
-const opacitySpeed = 5;
+const TIME = 500;
+const DELAY = 50;
+const opacitySpeed = (MaxOpacity-MinOpacity)/(TIME/DELAY);
+const sizeSpeed = (MaxSize-MinSize)/(TIME/DELAY);
+// TIME/((MaxSize-MinSize));
 
 function init( ){
     objectsOfEffects.push( {
@@ -27,16 +30,24 @@ function effect( index ){
     objectsOfEffects[index]["check"]=false;
     console.log(objectsOfEffects[index])
     objectsOfEffects[index]["input"].classList.remove("disable");
-    // remove("disable");
     A( index, MaxSize, MinOpacity);
 }
 
 function A( index, size, opacity ){
-    objectsOfEffects[index]['label'].style = `font-size: ${size}px; opacity: ${opacity/100.0}`;
-    console.log(`size: ${size}, opacity: ${opacity}`);
+    let style = "";
+    if( size >= MinSize){
+        style +=`font-size: ${size}px;`;
+    }else{
+        style +=`font-size: ${MinSize}px;`;
+    }
+    if( opacity >= MinOpacity){
+        style += `opacity: ${opacity/100};`;
+    }
+    objectsOfEffects[index]['label'].style = style;
+    console.log(style);
     
     if( opacity < MaxOpacity && objectsOfEffects[index]['check']==false ){
-        setTimeout( A, 60, index, size - sizeSpeed, opacity+opacitySpeed );
+        setTimeout( A, DELAY, index, size - sizeSpeed, opacity+opacitySpeed );
     }else if(objectsOfEffects[index]['check']){
         HD(index);
     }
