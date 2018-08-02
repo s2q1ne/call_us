@@ -37,7 +37,7 @@ function A( index, size, opacity ){
     
     if( opacity < MaxOpacity && objectsOfEffects[index]['check']==false ){
         setTimeout( A, 60, index, size - sizeSpeed, opacity+opacitySpeed );
-    }else{
+    }else if(objectsOfEffects[index]['check']){
         HD(index);
     }
 }
