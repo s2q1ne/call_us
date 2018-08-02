@@ -24,10 +24,12 @@
                 <div class="users" >
                     <form class="form" >
                         <ul>
-                            <li class="holder">ID</li>
-                            <li><input placeholder="ID"> </li><br>
-                            <li class="holder">Password</li>
-                            <li><input placeholder="PASSWORD"></li><br>
+                            <li class="holder" id="inputIDlabel" >ID</li>
+                            <li><input placeholder="ID" id="inputIDTab" 
+                                onfocus="effect(0);" onfocusout="HD(0);"> </li><br>
+                            <li class="holder" id="inputPWlabel">Password</li>
+                            <li><input placeholder="PASSWORD" id="inputPWTab" 
+                                onfocus="effect(1);" onfocusout="HD(1);"></li><br>
                             <li>
                                 <input class="st-checkbox" style="float:left; width:12px; opacity: 0;" id="checkbox" type="checkbox" value="value1">
                                 <label id="remember" for="checkbox">내 계정 기억하기</label>
@@ -56,5 +58,8 @@
                 </div>
             </div>
         </main>
+        <footer>
+            <script src = "./js/inputeffect.js"></script>
+        </footer>
     </body>
 </html>

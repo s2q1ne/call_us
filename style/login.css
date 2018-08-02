@@ -155,3 +155,19 @@ button:hover{
 .pointer{
     cursor: pointer;
 }
+.disable{
+    opacity: 0.0;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { 
+    color:transparent; 
+}
+ input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { 
+     color:transparent; 
+    }
+ input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { 
+     color:transparent; 
+    } 
+input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder { 
+    color:transparent; 
+}
